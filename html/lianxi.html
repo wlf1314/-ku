@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title> 塑胶塑料制品公司</title>
+    <link rel="stylesheet" href="../css/lianxi.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        function  replay(){
+
+            var textarea= $("<textarea/>").css('width','500px').css('height','80px');
+            var baocun=$("<input type='button' value='发送'/>") .css('width','50px').css('height','30px');
+            var quxiao=$("<input type='button' value='取消'/>") .css('width','50px').css('height','30px');
+            //获取当前元素的父节点
+            var f_div=$(event.target).parent();
+            textarea.appendTo(f_div);
+            baocun.appendTo(f_div);
+            quxiao.appendTo(f_div);
+            $(quxiao).click(function(){
+                $(textarea).hide();
+                $(this).hide();
+                $(baocun).hide();
+            })
+        }
+        function fnsubmit() {
+            var odiv =$("#box");
+            var oem = $("#em");
+            var otext = $("#text");
+            var oli = $("#li");
+            var add_li = $("<li>");
+            var o_span = $("<span></span>");
+            var span1 =$("<span></span>");
+
+
+            var str = $("<textarea>").val(otext.val()) .css('width','530px').css('height','80px');
+            var span1Text = $("<input type='button' value='回复' id='hf' onclick='replay()'/>").css('width','50px').css('height','30px').css('float','left');
+           
+            o_span.appendTo(add_li);
+            o_span.css('display','none');
+
+            str.appendTo(add_li);
+            span1Text.appendTo(add_li).css('margin-left','92.5%').css('margin-top','-30px');
+
+            add_li.appendTo(odiv);
+
+
+            
+        }
+    </script>
+</head>
+<body>	
+  <div class="div">
+	<div class="header">
+        <span>龙飞设计</span>
+        <div class="yuyan">
+            <input type="button" value="中文" class="zw">
+            <input type="button" value="English" class="yw">
+            <img src="../img/sear.png" class="sear">
+        </div>
+        
+    </div>
+    <div class="daohang">
+            <ul class="fenlei">
+                <li class="dhli1">
+                    <a href="index.html" class="a a1">首页</a></li>
+                <li class="li1">
+                    <a href="about.html" class="a a2">关于我们</a>
+                    <ul style=" overflow: hidden;   width: 100%; padding-top:10px; padding-bottom: 10px;" id="gywm">
+                        <li>公司简介</li>
+                        <li>资质荣誉</li>
+                        <li>企业文化</li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="pic.html" class="a a3">产品中心</a>
+                    <ul style=" overflow: hidden;   width: 100%; padding-top:10px; padding-bottom: 10px;" id="gywm">
+                        <li>底部固定型</li>
+                        <li>端部固定型</li>
+                        <li>可交换型</li>
+                        <li>履带型</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="news.html" class="a a4">新闻动态</a>
+                    <ul style=" overflow: hidden;   width: 100%; padding-top:10px; padding-bottom: 10px;" id="gywm">
+                        <li>公司新闻</li>
+                        <li>行业新闻</li>
+                        <li>媒体报道</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="shengchan.html" class="a a5">生产设备</a>
+                    <ul style=" overflow: hidden;   width: 100%; padding-top:10px; padding-bottom: 10px;" id="gywm">
+                        <li>塑料搅拌干燥机</li>
+                        <li>塑料布撕碎机</li>
+                        <li>塑料合成机</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="lianxi.html" class="a a6">联系我们</a>
+                    <ul style=" overflow: hidden;   width: 100%; padding-top:10px; padding-bottom: 10px;" id="gywm">
+                        <li>联系方式</li>
+                        <li>在线留言</li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+  </div>
+  <div class="section">
+      <img src="../img/probanner2.jpg" class="banner01">
+  </div>
+  <div class="weizhi">
+          <p>您当前的位置： 首页 > 产品中心</p>
+  </div>
+
+  <div class="inpro">
+      <div class="inptit">
+      <span>
+          <em class="em">在线留言</em>
+      </span>
+      </div>
+  </div>
+  <p class="liuyan">在线留言</p>
+          <div id="parent">
+               <h4>留言内容：</h4>
+               <input type="text" id="text"><br/>
+               <input id="btn" type="button" onclick="fnsubmit()" value="点击发送"/>
+               <div id="box">
+               </div>
+          </div>
+          
+           <div class="lianxi">
+         <div class="lianxi-margin">
+             <div class="lianxi-left">
+                 <h3>联系我们</h2>
+                 <ul>
+                    <li>地址：昆山市智谷创意产业园</li>
+                    <li>电话：4001-000-000</li>
+                    <li>邮箱：contact@kindjob.com</li>
+                    <li>传真：100-0000-000</li>
+                 </ul>
+             </div>
+             <div class="lianxi-right">
+                 <p>
+                    <input type="text" name='username' class='text' placeholder="姓名*">
+                    <span class='tishi'>姓名长度至少2位</span>
+                 </p>       
+                 <p>
+                    <input type="text" class="text" placeholder="邮箱*" name='email'>
+                    <span class='tishi'>请输入正确的邮箱格式</span>
+                 </p>
+                 <p>
+                    <input type="text" class="text" name='phone' placeholder="电话*" maxlength='11'>
+                    <span class='tishi'>请正确输入您的手机号码</span>
+                 </p>
+                 <p><input type="text" name='username' placeholder="内容/选填" class="inp"></p>
+                 <p><input type="submit" value="提交留言"  class="btn"></p>
+             </div>
+         </div>
+     </div>
+
+      
+          
+   
+   
+
+
+  
+ 
+      <div class="xinwen">
+          <div class="xgxw">
+              <p class="xg">相关新闻</p>
+          </div>
+          <hr class="hr">
+          <div class="xw">
+              <ul class="lie">
+                  <li class="lie2">
+                      <ul>
+                          <li>唯星集团运营总裁张蓬受邀出席IAI国际创享节</li>
+                          <li>商业之”智“每一家企业都梦想拥有完美的商业模式</li>
+                          <li>张蓬开场如是说，“每一家传统企业多少年来的经营逻辑都</li>
+                          <li>每个企业家都立志追求完美商业，何谓完美?就是补充自己</li>
+                      </ul>
+                  </li>
+                  <li class="shijian">
+                      <ul>
+                          <li>2016.06.03</li>
+                          <li>2016.06.03</li>
+                          <li>2016.06.03</li>
+                          <li>2016.06.03</li>
+                      </ul>
+                  </li>
+                  <li class="li3">
+                      <ul>
+                          <li>唯星集团运营总裁张蓬受邀出席IAI国际创享节</li>
+                          <li>商业之”智“每一家企业都梦想拥有完美的商业模式</li>
+                          <li>张蓬开场如是说，“每一家传统企业多少年来的经营逻辑都</li>
+                          <li>每个企业家都立志追求完美商业，何谓完美?就是补充自己</li>
+                      </ul>
+                  </li>
+                  <li class="shijian">
+                      <ul>
+                          <li>2016.06.03</li>
+                          <li>2016.06.03</li>
+                          <li>2016.06.03</li>
+                          <li>2016.06.03</li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+
+      </div>
+<footer class="footer">
+       <div>
+       <ul>
+           
+           <li class="fimg"><p>龙飞设计</p></li>
+           <li class="fdh">电话：18298011465</li>
+           
+       </ul>
+       </div>
+       
+   </footer>
+   <div class="dibu">
+       <ul class="dibuul">
+           <li class="dibuli lid1">
+               <ul>
+                   <li class="sy">首页</li>
+                   <li>关于我们</li>
+                   <li>公司简介</li>
+                   <li>资质荣誉</li>
+                   <li>企业文化</li>
+              </ul>
+           </li>
+           <li class="dibuli">
+               <ul>
+                   <li class="sy">产品中心</li>
+                   <li>底部固定型</li>
+                   <li>端部固定型</li>
+                   <li>可交换型</li>
+                   <li>履带型</li>
+              </ul>
+           </li>
+           <li class="dibuli">
+               <ul>
+                   <li class="sy">新闻动态</li>
+                   <li>公司新闻</li>
+                   <li>行业新闻</li>
+                   <li>媒体报道</li>
+                   <li>&nbsp;</li>
+              </ul>
+           </li>
+           <li class="dibuli">
+               <ul>
+                   <li class="sy">生产设备</li>
+                        <li>塑料搅拌干燥机</li>
+                        <li>塑料布撕碎机</li>
+                        <li>塑料合成机</li>
+                   <li>&nbsp;</li>
+              </ul>
+           </li>
+           <li class="dibuli">
+               <ul>
+                   <li class="sy">联系我们</li>
+                   <li>联系方式</li>
+                   <li>在线留言</li>
+                   <li>&nbsp;</li>
+                   <li>&nbsp;</li>
+              </ul>
+           </li>
+       </ul>
+   </div>
+   <div class="banquan">
+       <p>
+           <span>版权所有：王龙飞。创建时间2017/12/22. 站点地图 </span>
+           <input type="text" name="dd" list="mylist" placeholder="友情链接" class="yqlj">
+           <datalist id="mylist">
+              <option>唯星</option>
+              <option>百度</option>
+          </datalist>
+          <img src="../img/yu.png">
+          </p>
+
+   </div>
+
+</body>
+ <script>
+    	    $('input[name=username]').blur(function() {
+        val = this.value;
+
+        if (val.length < 2) {
+            $(this).data({
+                's': 0
+            });
+            $(this).next().show();
+        } else {
+            $(this).data({
+                's': 1
+            });
+            $(this).next().hide(); 
+        }
+    });
+  
+
+    $('input[name=email]').blur(function() {
+        val = this.value;
+
+        if (!val.match(/^\w+@\w+\.\w+$/i)) {
+            $(this).data({
+                's': 0
+            });
+            $(this).next().show();
+        } else {
+            $(this).data({
+                's': 1
+            });
+            $(this).next().hide();
+        }
+    });
+    $('input[name=phone]').blur(function() {
+        val = this.value;
+
+        if (!val.match(/^139\d{8}$/)) {
+            $(this).data({
+                's': 0
+            });
+            $(this).next().show();
+        } else {
+            $(this).data({
+                's': 1
+            });
+            $(this).next().hide();
+        }
+    });
+    $('form').submit(function() {
+
+        $('.text').blur(); 
+       
+
+        tot = 0;
+        $('.text').each(function() {
+            tot += $(this).data('s');
+        });
+        if (tot != 3) {
+            return false; 
+            
+        }
+    });
+    </script>
+
+</html>

@@ -1,0 +1,412 @@
+@charset "utf-8";
+*{margin: 0;
+  padding: 0;
+}
+body{
+    min-width: 1300px;
+}
+
+a:active{color:#000;}
+a:hover{color:#000;}
+a:link{color:#000;}
+a:visited{color:#000;}
+a{text-decoration:none;}
+.div{clear: both;}
+.header{width: 1200px;
+        margin: auto;
+        padding-top: 30px;
+}
+.header span{
+    width: 20px;
+    border: 1px solid #666;
+    color: #666;
+}
+.yuyan{float: right;}
+.zw{width:45px;
+    height:24px;
+    border: 1px solid #e75826;
+    font-size: 12px;
+    color: #343c48;
+    outline: none;
+    background: #fff;
+}
+.yw{width:60px;
+    height:24px;
+    border: 1px solid #dedede;
+    outline: none;
+    background:#fff;
+    margin-left: -4px;
+    margin-top: -1px;
+}
+.sear{margin-left: 5px;}
+.daohang{margin-top:33px;
+         height: 50px;
+         border-bottom:5px solid #e4e8ea;
+}
+.fenlei{width: 1200px;
+        margin: auto;
+        background: skyblue;
+}
+.daohang ul li{float: left;
+               list-style: none;
+               width: 16.5%;
+               height: 50px;
+               border-left:1px solid #d1d3d5;
+               position: relative;
+               text-align: center;
+               line-height: 50px;
+}
+.doahang ul li a{
+    display:inline-block;
+    color:#312d2d;
+}
+.daohang ul li:hover .a{
+	display:inline-block;
+    border-bottom: 4px solid #e75826;
+	height:50px;
+    cursor:pointer;
+}
+.a1{
+    border-bottom: 4px solid #e75826;
+    height:50px;
+    display:inline-block;
+}
+
+.daohang ul li:hover ul li a {
+  border: 0;
+  cursor:pointer;
+}
+
+.daohang ul li ul{
+    width: 100%;
+    transition: all 1s ease;
+}
+.fenlei li ul li:hover{
+    color: salmon !important;
+    transition: 0s ease;
+    cursor:pointer;
+}
+.daohang ul li ul li{
+    float: none;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 0px;
+    transition:all 1s ease;
+}
+.daohang ul li{
+    transition: all 1s ease;
+}
+.daohang ul li:hover #gywm{
+    display:block;
+    font-size: 13px;
+    border: 0px;
+    position: absolute;
+    z-index: 5555;
+    background: #fff;
+    transition: all 1s ease;
+    cursor:pointer;
+
+}
+
+#gywm{
+    display: none;
+}
+.daohang ul li ul li a {
+  display: block;
+  font-size: 13px;
+}
+.section{
+    width: 85%;
+    clear: both;
+    max-width: 1600px;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    padding-top: 140px;
+}
+.banner01{
+    width: 100%;
+    
+}
+.chanpintu{
+    border: 0px;
+    margin:0 auto;
+    text-align: center;
+}
+.index{
+    width:24.9%;
+    padding: 0;
+    margin-left: -5px;
+    margin-top: -3px;
+}
+.cptu{
+    float: left;
+    margin: -4px auto;
+}
+.inpro{
+    margin-bottom: 105px;
+    
+}
+.inptit{
+    text-align: center;
+    margin: 60px 0 85px;
+}
+.inptit span{
+    font-size: 26px;
+    color: #101011;
+    display: block;
+    background: url(../img/inpline.jpg) repeat-x center;
+}
+.inptit span .em {
+  font-style: normal;
+  display: inline-block;
+  padding: 0 20px;
+  background: #fff;
+}
+.inptit p{
+    font-size:16px;
+    width: 43%;
+    margin:25px auto;
+    line-height: 50px;
+    font-family: 微软雅黑；
+}
+.inptit a{
+    width: 180px;
+    height: 35px;
+    text-align: center;
+    background: #e60012;
+    color:#fff;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 35px;
+}
+.lunbotu{
+    width: 80%;
+    clear: both;
+    margin: auto;
+    text-align: center;
+    justify-content:space-around;
+			 display: flex;
+             flex-flow: row inwrap;
+}
+.lunbotu div{
+    float: left;
+    margin: auto;
+    overflow: hidden;
+
+}
+.lunbotu img{
+    width: 100%;
+}
+.lunbotu p{
+    font-size: 13px;
+    margin-top: 30px;
+}
+.lunbotu div:hover .lun{
+    transform: scale(1.2,1.2);
+    transition: 1s ease;
+    cursor:pointer;
+}
+.lunbotu div:hover p{
+    color: salmon;
+    cursor:pointer;
+}
+
+.active{
+    padding: 0 0 95px;
+    overflow: hidden;
+    background: url(../img/innew.jpg) no-repeat top center;
+    width: 85%;
+    margin: auto;
+    
+}
+.active img{
+    width: 100%;
+}
+
+.xinwen em{
+    font-style: normal;
+  display: inline-block;
+  padding: 0 20px;
+  background: #9c9c9e;
+}
+.innews ul li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    margin-left:5%;
+}
+.innews ul li .pic{
+    width: 100%;
+    overflow: hidden;
+}
+.pic1{
+    background: #fff;
+    padding: 20px 18px;
+}
+.innews ul li:hover img{
+    transform: scale(1.2,1.2);
+    transition: 1s ease;
+    cursor:pointer;
+}
+.innews ul li:hover a{
+    color: #e75826 ;
+}
+.innews ul li a{
+    font-size: 16px;
+}
+.pic1 p{
+    font-size: 14px;
+    color: #666;
+}
+.pic1 span{
+    font-size: 14px;
+    color: #666;
+}
+
+.gy{
+    width: 70% !important;
+}
+.wm{
+    
+    
+    width: 250px !important;
+    height: 30px !important;
+    font-size: 16px !important;
+    font-family: arial;
+    display: block;
+    border: 2px solid #bbb;
+    text-align: center;
+    line-height: 30px;
+    margin: 60px auto 0;
+    color: #9d9d9d !important;
+    background: #fff !important;
+    border-radius: 5px;
+}
+.inptit .wm:hover{
+    background: #e75826 !important;
+    transition: 1s ease;
+    color: #fff !important;
+    cursor:pointer;
+}
+.footer{
+    width: 100%;
+    margin: auto;
+    clear: both;
+}
+.footer ul{
+    
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    list-style: none;
+    float: left;
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+}
+.fimg{
+    margin-left: 20%;
+    padding-top: 15px;
+    color: #666;
+}
+
+.fdh{
+    list-style:none;
+    float: right;
+    background: #e75826;
+    margin-top: -36px;
+    width: 15%;
+    height: 100%;
+    font-size: 18px;
+    margin-right: 23.5%;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
+.dibu{
+    width: 100%;
+    margin: auto;
+    clear: both;
+}
+.dibu .dibuul{
+    width: 90%;
+    list-style: none;
+    float: left;
+    padding-left: 10%;
+    border-bottom: 1px solid #dfdfdf;
+    margin: auto;
+    
+}
+.dibuli ul{
+    list-style: none;
+}
+.dibuul .dibuli{
+    
+    float: left;
+    width: 10%;
+    border-left: 1px solid #dfdfdf;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    line-height: 30px;
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+}
+.lid1{
+    margin-left: 10%;
+}
+.sy{
+    color: #e75826;
+}
+.dibuli ul li:hover{
+    color: #e75826;
+    transform: scale(1.1,1.1);
+    cursor:pointer;
+}
+.banquan{
+    clear: both;
+    margin: auto;
+    text-align: center;
+    color: #666;
+}
+.banquan p{
+    padding-top: 30px;
+    font-size: 12px;
+}
+.yqlj{
+    width: 70px;
+}
+.lbtu{
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    animation-name: mylunbo;
+    animation-duration: 15s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+@keyframes mylunbo{
+    0%{
+        background: url(../img/banner_fuwu.png);
+        background-size: 100% 550px;
+    }
+    25%{
+        background: url(../img/banner01.jpg);
+        background-size: 100% 550px;
+    }
+    50%{
+        background: url(../img/banner1.png);
+        background-size: 100% 550px;
+    }
+    75%{
+        background: url(../img/banner_about.png);
+        background-size: 100% 550px;
+    }
+    100%{
+        background: url(../img/banner_case.png);
+        background-size: 100% 550px;
+    }
+}
